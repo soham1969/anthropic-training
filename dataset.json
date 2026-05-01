@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon training with high carbohydrate intake and meals timed around a 90-minute morning run",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan covers 3 meals plus pre/post-workout nutrition strategically timed around the 90-minute training session",
+      "Total daily carbohydrate intake supports endurance athlete needs (approximately 8-10g per kg body weight)",
+      "All meals and snacks are vegetarian and nut-free",
+      "Plan is presented in compact, easy-to-scan format suitable for a single day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a professional endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around training sessions"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "85 kg",
+      "goal": "Strength and power development for weightlifting competition",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan spans exactly 1 day with 4-5 meals",
+      "Protein distributed across all meals (minimum 25g per meal)",
+      "Includes pre-workout nutrition timing and composition",
+      "Total daily macros support strength athlete needs (approximately 2.0g protein per kg bodyweight)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) needing elevated protein distribution across meals and pre-workout nutrition optimization"
+  },
+  {
+    "prompt_inputs": {
+      "height": "183 cm",
+      "weight": "78 kg",
+      "goal": "Maintain energy for multiple training sessions with optimal recovery and hydration for tennis performance",
+      "restrictions": "Lactose intolerant"
+    },
+    "solution_criteria": [
+      "Meal plan covers 3 meals and 2-3 snacks distributed throughout the day to support multiple intense bursts of activity",
+      "Includes specific hydration recommendations appropriate for tennis training",
+      "Balanced macronutrients with adequate carbohydrates for energy, protein for recovery, and healthy fats",
+      "All foods accommodate lactose intolerance restriction"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport-specific athlete (tennis player) requiring balanced macronutrients with focus on hydration and energy availability for multiple short intense bursts throughout the day"
+  }
+]

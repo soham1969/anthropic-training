@@ -1,0 +1,54 @@
+[
+  {
+    "output": "\n[\"artificial intelligence\", \"labor market dynamics\", \"post-industrial economies\", \"machine learning algorithms\", \"hiring processes\", \"algorithmic bias\", \"employment discrimination\", \"neuroimaging studies\", \"automation anxiety\", \"amygdala\", \"prefrontal cortex\", \"physiological stress responses\", \"technological disruption\", \"wage data\", \"manufacturing and service sectors\", \"AI adoption\", \"income volatility\", \"job security perceptions\", \"psychological scales\", \"distributed computing architectures\", \"natural language processing\", \"policy frameworks\", \"worker retraining programs\", \"organizational change management\"]\n",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "This study examines the intersection of artificial intelligence and labor market dynamics in post-industrial economies. Machine learning algorithms are increasingly deployed in hiring processes, raising questions about algorithmic bias and employment discrimination. Simultaneously, neuroimaging studies reveal that exposure to automation anxiety activates the amygdala and prefrontal cortex, suggesting physiological stress responses to technological disruption. We analyzed wage data from 50,000 workers across manufacturing and service sectors, finding that workers in regions with high AI adoption experienced a 12% income volatility increase over five years, while simultaneously reporting decreased job security perceptions measured through validated psychological scales. The technical infrastructure supporting these systems relies on distributed computing architectures and natural language processing, yet their societal impact depends critically on policy frameworks, worker retraining programs, and organizational change management strategies."
+      },
+      "solution_criteria": [
+        "Extracts topics spanning both technical domains (machine learning, neuroimaging, distributed computing, natural language processing) and social science domains (employment discrimination, labor markets, psychological stress, policy, organizational change)",
+        "Identifies all major topic areas without omitting interdisciplinary concepts",
+        "Returns output as a JSON array of strings"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with interdisciplinary passage containing mixed technical and social science topics to verify accurate topic extraction across domains"
+    },
+    "score": 9,
+    "reasoning": "The solution meets all mandatory requirements: it provides a valid JSON array of strings containing topics from the article with no extra commentary. It successfully spans both technical and social science domains as required by the secondary criteria. The extraction is comprehensive and identifies major topic areas without significant omissions. While there are minor issues with granularity and abstraction level consistency, these do not constitute violations of the stated criteria. The solution fulfills the exact requirements specified."
+  },
+  {
+    "output": "\n[\"neuroimaging\", \"cognitive load\", \"compensatory activation patterns\", \"brain networks\", \"working memory tasks\", \"metabolic demands\", \"glucose consumption\", \"prefrontal regions\", \"computational models\", \"neural efficiency\", \"task demands\", \"neural resources\", \"individual differences\", \"task performance\", \"structural connectivity\", \"anatomical organization\", \"functional capacity\", \"age-related cognitive decline\", \"neural plasticity\", \"compensatory mechanisms\"]\n",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in neuroimaging have revealed that sustained cognitive load triggers compensatory activation patterns across distributed brain networks. Participants performing demanding working memory tasks showed increased metabolic demands, correlating with elevated glucose consumption in prefrontal regions. These findings align with computational models suggesting that neural efficiency decreases under high task demands, necessitating recruitment of additional neural resources. Furthermore, individual differences in task performance were predicted by baseline structural connectivity measures, indicating that anatomical organization constrains functional capacity. The implications extend to understanding age-related cognitive decline, where reduced neural plasticity may explain diminished compensatory mechanisms."
+      },
+      "solution_criteria": [
+        "Identifies both explicit topics (neuroimaging, working memory, brain networks) and implicit topics requiring inference (neural efficiency, cognitive aging, neural plasticity)",
+        "Captures conceptual relationships underlying the passage (e.g., cognitive load as a causal mechanism, compensation as a functional response)",
+        "Excludes minor details while preserving semantically distinct topic areas"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with passage containing implicit topics that require inference rather than direct mentions to assess semantic understanding"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it is a valid JSON array containing only topic strings with no extraneous commentary. Regarding secondary criteria, it demonstrates strong performance by identifying both explicit and implicit topics, capturing conceptual relationships (cognitive load as causal mechanism, compensation as functional response), and maintaining semantic distinctness across most entries. The inclusion of 20 topics is thorough and well-balanced, though a few entries represent minor details rather than primary topic areas. Overall, the solution meets the exact specifications outlined in the criteria without unnecessary additions or omissions."
+  },
+  {
+    "output": "\n[\"Congress of Vienna\", \"European political geography\", \"Napoleon's defeat\", \"Klemens von Metternich\", \"balance-of-power system\", \"Britain\", \"Russia\", \"Prussia\", \"France\", \"territorial boundaries\", \"Rhineland\", \"Saxony\", \"Concert of Europe\", \"diplomatic mechanism\", \"collective security\", \"conservative ideology\", \"monarchical legitimacy\", \"nationalist movements\", \"Italy\", \"German states\", \"revolutionary ideals\", \"restoration politics\", \"nineteenth century\"]\n",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The Congress of Vienna (1814-1815) fundamentally reshaped European political geography following Napoleon's defeat. Austrian Foreign Minister Klemens von Metternich orchestrated negotiations among Britain, Russia, Prussia, and France, establishing a balance-of-power system designed to prevent future hegemonic conflicts. The settlement redrew territorial boundaries across the continent, with Prussia gaining the Rhineland and portions of Saxony, while the Concert of Europe emerged as a diplomatic mechanism for collective security. Metternich's conservative ideology prioritized monarchical legitimacy and suppressed nationalist movements, particularly in Italy and the German states, reflecting broader tensions between revolutionary ideals and restoration politics that would dominate the nineteenth century."
+      },
+      "solution_criteria": [
+        "Extracts both proper nouns (Congress of Vienna, Metternich, Britain, Prussia, Rhineland, Italy) and abstract concepts (balance-of-power, legitimacy, nationalism, restoration politics)",
+        "Distinguishes between specific entities/events and broader thematic topics they represent",
+        "Returns results as a valid JSON array of strings",
+        "Avoids redundant entries while capturing overlapping concepts at appropriate levels of abstraction"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with dense historical passage featuring proper nouns, specific dates, and overlapping concepts to evaluate handling of entity-based vs. abstract topics"
+    },
+    "score": 8,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no extra commentary. It successfully extracts both proper nouns and abstract concepts as required by the secondary criteria. The extraction is comprehensive and captures the main themes of the passage. While there are minor opportunities to improve abstraction levels and reduce some generic descriptors, these do not constitute violations of the stated criteria. The solution demonstrates solid understanding of topic extraction with appropriate distinction between specific entities and broader thematic concepts."
+  }
+]

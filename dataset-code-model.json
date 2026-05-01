@@ -1,0 +1,14 @@
+[
+  {
+    "task": "Parse an AWS S3 bucket name from an S3 URI string like 's3://my-bucket-name/path/to/object'",
+    "format": "regex"
+  },
+  {
+    "task": "Create a CloudFormation template JSON object that defines a basic S3 bucket with versioning enabled",
+    "format": "json"
+  },
+  {
+    "task": "Write a Python function that converts an AWS IAM policy document from JSON format to a human-readable summary listing all allowed actions",
+    "format": "python"
+  }
+]
